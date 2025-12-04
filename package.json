@@ -1,0 +1,47 @@
+{
+  "name": "pebble-ai-assistant",
+  "author": "Dino",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "AI Assistant",
+    "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "basalt",
+      "chalk",
+      "diorite",
+      "emery"
+    ],
+    "watchapp": {
+      "watchface": false
+    },
+    "messageKeys": [
+      "KEY_QUESTION",
+      "KEY_RESPONSE",
+      "KEY_ERROR"
+    ],
+    "resources": {
+      "media": [
+		{
+		  "menuIcon": true,
+          "type": "png",
+          "name": "LOGO",
+          "file": "images/logo.png"
+		},
+        {
+          "menuIcon": false,
+          "type": "png",
+          "name": "MIC_ICON",
+          "file": "images/mic_icon.png"
+        }
+      ]
+    },
+    "capabilities": [
+      "configurable"
+    ]
+  }
+}
